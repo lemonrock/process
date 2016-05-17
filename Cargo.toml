@@ -1,0 +1,25 @@
+# This file is part of process. It is subject to the license terms in the COPYRIGHT file found in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/process/master/COPYRIGHT. No part of process, including this file, may be copied, modified, propagated, or distributed except according to the terms contained in the COPYRIGHT file.
+# Copyright © 2016 The developers of process. See the COPYRIGHT file in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/process/master/COPYRIGHT.
+
+[package]
+name = "process"
+description = "Provides access to process information: HostName, Program name, Pid (process id)"
+keywords = ["pid", "hostname", "process", "programname", "name"]
+license = "MIT"
+authors = ["Raphael Cohn <raphael.cohn@stormmq.com>"]
+documentation = "https://github.com/lemonrock/process/blob/master/README.md"
+homepage = "https://github.com/lemonrock/process"
+repository = "https://github.com/lemonrock/process.git"
+exclude = ["*"]
+include = ["README.md", "LICENSE", "COPYRIGHT", "src/**/*.rs", "benches/**/*.rs", "examples/**/*.rs", "tests/**/*.rs", "Cargo.toml", "rustfmt.toml", "clippy.toml"]
+# Relative to Cargo.toml
+readme = "README.md"
+publish = false
+version = "0.0.0"
+
+[replace]
+"libc:0.2.11" = { git = "https://github.com/lemonrock/libc", rev = "b19b5465a1235be3323363cdc11838739b593029" }
+
+[dependencies]
+libc = "0.2.11"
+once = { version = "0.2.1", git = "https://github.com/phil-opp/rust-once", rev = "45d4ae2982e4292d07ad41803fa9e6576f7534f4" }
