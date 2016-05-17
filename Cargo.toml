@@ -3,7 +3,7 @@
 
 [package]
 name = "process"
-description = "Provides access to process information: HostName, Program name, Pid (process id)"
+description = "Provides cross-platform access to process information: HostName, Program name, Pid (process id)"
 keywords = ["pid", "hostname", "process", "programname", "name"]
 license = "MIT"
 authors = ["Raphael Cohn <raphael.cohn@stormmq.com>"]
